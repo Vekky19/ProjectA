@@ -910,8 +910,7 @@ MonoBehaviour:
   CinemachineCameraTarget: {fileID: 4135013737264249454}
   TopClamp: 89
   BottomClamp: -89
-  targetSpeed: 0
-  ASource: {fileID: 1029419177}
+  FootstepAudioSource: {fileID: 1029419177}
 --- !u!1 &8616685847976805173
 GameObject:
   m_ObjectHideFlags: 0
