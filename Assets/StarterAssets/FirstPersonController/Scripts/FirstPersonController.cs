@@ -64,6 +64,9 @@ namespace StarterAssets
 		private float _jumpTimeoutDelta;
 		private float _fallTimeoutDelta;
 
+        // footstep audiosource
+        public AudioSource FootstepAudioSource;
+
 	
 #if ENABLE_INPUT_SYSTEM
 		private PlayerInput _playerInput;
@@ -196,7 +199,32 @@ namespace StarterAssets
 
 			// move the player
 			_controller.Move(inputDirection.normalized * (_speed * Time.deltaTime) + new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
-		}
+
+            // play footstep audio baysed off current speed
+            if (currentHorizontalSpeed != 0)
+            {
+                if (!FootstepAudioSource.isPlaying)
+                    FootstepAudioSource.Play();
+            }
+            else
+            {
+                if (FootstepAudioSource.isPlaying)
+                    FootstepAudioSource.Stop();
+            }
+            if (_input.sprint)
+            {
+                FootstepAudioSource.pitch = 1.75f;
+            }
+            else
+            {
+                FootstepAudioSource.pitch = 1f;
+            }
+            if (!Grounded)
+            {
+                if (FootstepAudioSource.isPlaying)
+                    FootstepAudioSource.Stop();
+            }
+        }
 
 		private void JumpAndGravity()
 		{
