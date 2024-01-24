@@ -15,6 +15,7 @@ public class Inventory : MonoBehaviour
 
     public GameObject InventoryUI;
     public StarterAssets.FirstPersonController FPC;
+    public AudioSource InventoryAudioSource;
 
     private void Update()
     {
@@ -77,6 +78,9 @@ public class Inventory : MonoBehaviour
             //item not in inventory, create new iteminstance
             CreateNewInstance(newItem);
         }
+
+        InventoryAudioSource.clip = newItem.pickupClip;
+        InventoryAudioSource.Play();
     }
 
     public void RemoveItem(Item removeItem)

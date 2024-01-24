@@ -15,3 +15,4 @@ MonoBehaviour:
   name: Stone - Test Item
   max_stack_count: 64
   icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  pickupClip: {fileID: 8300000, guid: 87b1904e88d3f054895120230264559b, type: 3}
