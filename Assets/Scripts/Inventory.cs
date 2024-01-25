@@ -117,4 +117,29 @@ public class Inventory : MonoBehaviour
         ItemInstance newInstance = new ItemInstance(item, 1);
         items.Add(newInstance);
     }
+
+    public bool HasItem(Item item, int amount)
+    {
+        float thisItemCount = 0;
+
+        foreach (ItemInstance itemInstance in items)
+        {
+            if (itemInstance.item == item)
+            {
+                for (int i = 0; i < itemInstance.stack; i++)
+                {
+                    thisItemCount += 1;
+                }
+            }
+        }
+
+        if (thisItemCount >= amount)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 }
