@@ -6,6 +6,23 @@ public class BuildMenu : MonoBehaviour
 {
     public GameObject buildingMenu;
 
+    public Item StoneAxe;
+    public Item Stone, Branch;
+
+
+    public void CraftStoneAxe()
+    {
+        if (Inventory.Instance.HasItem(Stone, 2) && Inventory.Instance.HasItem(Branch, 1))
+        {
+            Inventory.Instance.RemoveItem(Stone);
+            Inventory.Instance.RemoveItem(Stone);
+            Inventory.Instance.RemoveItem(Branch);
+            Inventory.Instance.AddItem(StoneAxe);
+            Debug.Log("Crafting Stone Axe");
+        }
+        Debug.Log("Failed to Craft Stone Axe, not enough Resources.");
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.B))
