@@ -18,9 +18,7 @@ public class BuildMenu : MonoBehaviour
             Inventory.Instance.RemoveItem(Stone);
             Inventory.Instance.RemoveItem(Branch);
             Inventory.Instance.AddItem(StoneAxe);
-            Debug.Log("Crafting Stone Axe");
         }
-        Debug.Log("Failed to Craft Stone Axe, not enough Resources.");
     }
 
     void Update()

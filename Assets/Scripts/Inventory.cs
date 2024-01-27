@@ -13,7 +13,7 @@ public class Inventory : MonoBehaviour
 
     public List<ItemInstance> items = new List<ItemInstance>();
 
-    public GameObject InventoryUI;
+    public GameObject InventoryUIObject;
     public StarterAssets.FirstPersonController FPC;
     public AudioSource InventoryAudioSource;
 
@@ -21,9 +21,9 @@ public class Inventory : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Tab))
         {
-            if (InventoryUI.activeSelf)
+            if (InventoryUIObject.activeSelf)
             {
-                InventoryUI.SetActive(false);
+                InventoryUIObject.SetActive(false);
                 FPC.enabled = true;
 
                 Cursor.visible = false;
@@ -31,8 +31,10 @@ public class Inventory : MonoBehaviour
             }
             else
             {
-                InventoryUI.SetActive(true);
+                InventoryUIObject.SetActive(true);
                 FPC.enabled = false;
+
+                InventoryUI.Instance.ReloadInventoryUI();
 
                 Cursor.visible = true;
                 Cursor.lockState = CursorLockMode.Confined;
@@ -81,6 +83,7 @@ public class Inventory : MonoBehaviour
 
         InventoryAudioSource.clip = newItem.pickupClip;
         InventoryAudioSource.Play();
+        InventoryUI.Instance.ReloadInventoryUI();
     }
 
     public void RemoveItem(Item removeItem)
@@ -110,12 +113,27 @@ public class Inventory : MonoBehaviour
         {//stack is now at zero, remove instance from the inventory
             items.RemoveAt(items.IndexOf(lowestInstance));
         }
+
+        InventoryUI.Instance.ReloadInventoryUI();
     }
 
     public void CreateNewInstance(Item item)
     {
         ItemInstance newInstance = new ItemInstance(item, 1);
         items.Add(newInstance);
+
+        int i = 0;
+        foreach (ItemInstance instance in items)
+        {
+            if (instance.uiChild == i)
+            {
+                i++;
+            }
+            else
+            {
+                newInstance.uiChild = i;
+            }
+        }
     }
 
     public bool HasItem(Item item, int amount)
