@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Branch
   max_stack_count: 20
-  icon: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+  icon: {fileID: 21300000, guid: 91ece108851e95a4190b595146fdcbdb, type: 3}
   pickupClip: {fileID: 8300000, guid: 0322e531a2dd79e47ba845bd4342bf57, type: 3}

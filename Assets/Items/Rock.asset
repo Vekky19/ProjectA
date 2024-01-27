@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Rock
   max_stack_count: 20
-  icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  icon: {fileID: 21300000, guid: 0ea3c668415fb1f45b2ce090654eda03, type: 3}
   pickupClip: {fileID: 8300000, guid: 87b1904e88d3f054895120230264559b, type: 3}

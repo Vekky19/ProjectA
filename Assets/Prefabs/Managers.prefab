@@ -140,6 +140,7 @@ GameObject:
   - component: {fileID: 3366502677423515704}
   - component: {fileID: 3366502677423515707}
   - component: {fileID: 3366502677423515706}
+  - component: {fileID: 4643876329968157314}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -176,7 +177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   items: []
-  InventoryUI: {fileID: 0}
+  InventoryUIObject: {fileID: 0}
   FPC: {fileID: 0}
   InventoryAudioSource: {fileID: 3366502676541547864}
 --- !u!114 &3366502677423515707
@@ -206,3 +207,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingMenu: {fileID: 0}
+  StoneAxe: {fileID: 11400000, guid: f841a084b27f2fe448ca5f10bb1146ac, type: 2}
+  Stone: {fileID: 11400000, guid: 0c5b7e9b7efd7354c896269879fcc4bd, type: 2}
+  Branch: {fileID: 11400000, guid: e1fa99731ad0a2f449740553b0d6b18b, type: 2}
+--- !u!114 &4643876329968157314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3366502677423515710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cb0376445d46e641a845edbb8599a47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GridSlotsParent: {fileID: 0}
+  SlotPrefab: {fileID: 2402644337890615262, guid: 5d30f91e5125aab47aedd3436260aa25,
+    type: 3}
