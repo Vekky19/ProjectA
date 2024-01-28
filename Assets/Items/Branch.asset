@@ -16,3 +16,5 @@ MonoBehaviour:
   max_stack_count: 20
   icon: {fileID: 21300000, guid: 91ece108851e95a4190b595146fdcbdb, type: 3}
   pickupClip: {fileID: 8300000, guid: 0322e531a2dd79e47ba845bd4342bf57, type: 3}
+  equipable: 0
+  prefab: {fileID: 3099720613115761373, guid: 5ef0f3d77cdb287408d545101fb48e71, type: 3}

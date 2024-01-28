@@ -180,6 +180,7 @@ MonoBehaviour:
   InventoryUIObject: {fileID: 0}
   FPC: {fileID: 0}
   InventoryAudioSource: {fileID: 3366502676541547864}
+  DropPosition: {fileID: 0}
 --- !u!114 &3366502677423515707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225,3 +226,6 @@ MonoBehaviour:
   GridSlotsParent: {fileID: 0}
   SlotPrefab: {fileID: 2402644337890615262, guid: 5d30f91e5125aab47aedd3436260aa25,
     type: 3}
+  SelectedItemInfoObject: {fileID: 0}
+  UseButtonObject: {fileID: 0}
+  PlayerHand: {fileID: 0}

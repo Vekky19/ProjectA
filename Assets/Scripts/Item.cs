@@ -9,4 +9,6 @@ public class Item : ScriptableObject
     public int max_stack_count;
     public Sprite icon;
     public AudioClip pickupClip;
+    public bool equipable;
+    public GameObject prefab;
 }

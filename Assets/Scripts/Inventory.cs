@@ -16,6 +16,7 @@ public class Inventory : MonoBehaviour
     public GameObject InventoryUIObject;
     public StarterAssets.FirstPersonController FPC;
     public AudioSource InventoryAudioSource;
+    public Transform DropPosition;
 
     private void Update()
     {
@@ -159,5 +160,12 @@ public class Inventory : MonoBehaviour
         {
             return false;
         }
+    }
+
+    public void DropItem(Item item)
+    {
+        RemoveItem(item);
+
+        Instantiate(item.prefab, DropPosition.position, Quaternion.identity);
     }
 }
