@@ -625,6 +625,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1388980740 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3366502677423515706, guid: b6f3c600aac3af7448dc1dbcad3959d2,
+    type: 3}
+  m_PrefabInstance: {fileID: 3366502677978189981}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26fddc8b7c49877419af243dd4988cf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1611588352
 GameObject:
   m_ObjectHideFlags: 0
@@ -1551,6 +1563,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1660185956}
     m_Modifications:
+    - target: {fileID: 167329093, guid: 94b30fa8fc354284e826152bdf4e1fe5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1388980740}
+    - target: {fileID: 167329093, guid: 94b30fa8fc354284e826152bdf4e1fe5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CraftStoneAxe
+      objectReference: {fileID: 0}
     - target: {fileID: 7851690134876447260, guid: 94b30fa8fc354284e826152bdf4e1fe5,
         type: 3}
       propertyPath: m_Name
