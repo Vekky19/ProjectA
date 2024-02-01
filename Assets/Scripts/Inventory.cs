@@ -122,19 +122,6 @@ public class Inventory : MonoBehaviour
     {
         ItemInstance newInstance = new ItemInstance(item, 1);
         items.Add(newInstance);
-
-        int i = 0;
-        foreach (ItemInstance instance in items)
-        {
-            if (instance.uiChild == i)
-            {
-                i++;
-            }
-            else
-            {
-                newInstance.uiChild = i;
-            }
-        }
     }
 
     public bool HasItem(Item item, int amount)

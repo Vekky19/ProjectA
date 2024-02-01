@@ -19,12 +19,14 @@ public class Axe : MonoBehaviour, IEquipable
     public void Equip()
     {
         axeObject.SetActive(true);
+        axeObject.GetComponent<MeshRenderer>().enabled = true;
         equipped = true;
     }
 
     public void Unequip()
     {
         axeObject.SetActive(false);
+        axeObject.GetComponent<MeshRenderer>().enabled = false;
         equipped = false;
     }
 
@@ -38,6 +40,6 @@ public class Axe : MonoBehaviour, IEquipable
 
     public void SwingAxe()
     {
-        Debug.Log("Swing Axe");
+        
     }
 }
