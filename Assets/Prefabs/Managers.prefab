@@ -140,7 +140,7 @@ GameObject:
   - component: {fileID: 3366502677423515704}
   - component: {fileID: 3366502677423515707}
   - component: {fileID: 3366502677423515706}
-  - component: {fileID: 4643876329968157314}
+  - component: {fileID: 1388980744}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -211,7 +211,7 @@ MonoBehaviour:
   StoneAxe: {fileID: 11400000, guid: f841a084b27f2fe448ca5f10bb1146ac, type: 2}
   Stone: {fileID: 11400000, guid: 0c5b7e9b7efd7354c896269879fcc4bd, type: 2}
   Branch: {fileID: 11400000, guid: e1fa99731ad0a2f449740553b0d6b18b, type: 2}
---- !u!114 &4643876329968157314
+--- !u!114 &1388980744
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -227,5 +227,3 @@ MonoBehaviour:
   SlotPrefab: {fileID: 2402644337890615262, guid: 5d30f91e5125aab47aedd3436260aa25,
     type: 3}
   SelectedItemInfoObject: {fileID: 0}
-  UseButtonObject: {fileID: 0}
-  PlayerHand: {fileID: 0}

@@ -6,7 +6,7 @@ public class BuildMenu : MonoBehaviour
 {
     public GameObject buildingMenu;
 
-    public Item StoneAxe;
+    public Item StoneAxe, StonePick;
     public Item Stone, Branch;
 
 
@@ -18,6 +18,17 @@ public class BuildMenu : MonoBehaviour
             Inventory.Instance.RemoveItem(Stone);
             Inventory.Instance.RemoveItem(Branch);
             Inventory.Instance.AddItem(StoneAxe);
+        }
+    }
+
+    public void CreateStonePick()
+    {
+        if (Inventory.Instance.HasItem(Stone, 2) && Inventory.Instance.HasItem(Branch, 1))
+        {
+            Inventory.Instance.RemoveItem(Stone);
+            Inventory.Instance.RemoveItem(Stone);
+            Inventory.Instance.RemoveItem(Branch);
+            Inventory.Instance.AddItem(StonePick);
         }
     }
 

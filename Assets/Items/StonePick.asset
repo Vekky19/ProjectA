@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63e612b12144d8742b1c5aa334fc3f2e, type: 3}
+  m_Name: StonePick
+  m_EditorClassIdentifier: 
+  name: Stone Pick
+  max_stack_count: 1
+  icon: {fileID: 21300000, guid: 0806d31ef4116314ca1b4599a90cbf63, type: 3}
+  pickupClip: {fileID: 8300000, guid: 87b1904e88d3f054895120230264559b, type: 3}
+  equipable: 1
+  prefab: {fileID: 2147612160277568274, guid: 0fb9047e69985534a8e8c6b13e1ab58d, type: 3}

@@ -16,7 +16,6 @@ public class InventoryUI : MonoBehaviour
     public Transform GridSlotsParent;
     public GameObject SlotPrefab;
     public GameObject SelectedItemInfoObject;
-    public GameObject UseButtonObject;
 
     public void ReloadInventoryUI()
     {
@@ -31,7 +30,7 @@ public class InventoryUI : MonoBehaviour
         int i = 0;
         foreach (ItemInstance instance in Inventory.Instance.items)
         {
-            Transform slot = GridSlotsParent.GetChild(i);
+            Transform slot = GridSlotsParent.GetChild(instance.uiChild);
 
             slot.GetChild(0).GetComponent<Image>().enabled = true;
 

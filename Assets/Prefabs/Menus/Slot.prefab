@@ -148,6 +148,7 @@ GameObject:
   - component: {fileID: 2402644337890615260}
   - component: {fileID: 2874920856217897624}
   - component: {fileID: 7614948039589873073}
+  - component: {fileID: 2864254273143097136}
   m_Layer: 5
   m_Name: Slot
   m_TagString: Untagged
@@ -272,6 +273,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   instance: {fileID: 0}
+--- !u!114 &2864254273143097136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2402644337890615262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d1bc3c2208f7c943b13fa16daedcb54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5267220764570382295
 GameObject:
   m_ObjectHideFlags: 0
@@ -283,6 +296,7 @@ GameObject:
   - component: {fileID: 1982587750485852274}
   - component: {fileID: 413662146713284912}
   - component: {fileID: 6400178178607433948}
+  - component: {fileID: 4555654472787616863}
   m_Layer: 5
   m_Name: Icon
   m_TagString: Untagged
@@ -348,3 +362,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &4555654472787616863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5267220764570382295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fec8562f6e8286948b6c8274fb8c5f1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _canvas: {fileID: 0}
+  dragIcon: {fileID: 5204669300728947611, guid: b5b1e0ce49ef87c4393226cabc73c6ec,
+    type: 3}
+  dragObject: {fileID: 0}
